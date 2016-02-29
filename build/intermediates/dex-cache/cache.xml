@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\miche\Desktop\WhacAMole\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a13b9e05727d0bdee17760e96e7d2a860a55ad44">
+        <dex dex="C:\Users\miche\Desktop\WhacAMole\android\build\intermediates\pre-dexed\debug\core-1.0_1cb800b5dded8c25a4f1c82976ef9054763a734b.jar" />
+    </item>
+
+</items>
