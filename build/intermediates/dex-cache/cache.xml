@@ -2,24 +2,10 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\miche\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.8.0\33979d6d61ea91a3a758717cbc6acf38fbb6aae2\gdx-backend-android-1.8.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="33979d6d61ea91a3a758717cbc6acf38fbb6aae2">
-        <dex dex="C:\Users\miche\Desktop\DinoSpazio\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.8.0_05d016e457cc8cc1d07200d451fe486e633de145.jar" />
-    </item>
-    <item
-        jar="C:\Users\miche\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.8.0\8aaf0d40f211e94051538d28b06996a6cc5ed2af\gdx-1.8.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8aaf0d40f211e94051538d28b06996a6cc5ed2af">
-        <dex dex="C:\Users\miche\Desktop\DinoSpazio\android\build\intermediates\pre-dexed\debug\gdx-1.8.0_aa12b80bfa2a21d6fae26464e2fc0a7b88968d9e.jar" />
-    </item>
-    <item
         jar="C:\Users\miche\Desktop\DinoSpazio\core\build\libs\core-1.0.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="673d6686458b9c524a51359792a543c44ae89a48">
+        sha1="2875f7499c3dbed65d21b0a3097c8753b71f6dd2">
         <dex dex="C:\Users\miche\Desktop\DinoSpazio\android\build\intermediates\pre-dexed\debug\core-1.0_bbfde2a344791a986da8ba308cdc7c81a78b79e4.jar" />
     </item>
 

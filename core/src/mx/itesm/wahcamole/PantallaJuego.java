@@ -27,6 +27,10 @@ public class PantallaJuego implements Screen
     private Texture texturaFondo;
     private Sprite spriteFondo;
 
+    // GIF RATITA
+    private Texture texturaRatita;
+    private Sprite spriteRatita;
+
     // Dibujar
     private SpriteBatch batch;
 
@@ -77,6 +81,10 @@ public class PantallaJuego implements Screen
         // Fondo
         texturaFondo = new Texture(Gdx.files.internal("fondoNivel1.3.jpg"));
         spriteFondo = new Sprite(texturaFondo);
+
+        // Fondo
+        texturaRatita = new Texture(Gdx.files.internal("ratita gif.gif"));
+        spriteRatita = new Sprite(texturaRatita);
 
         //Boton de regreso
         texturaBtnHome = new Texture(Gdx.files.internal("btnHome.jpg"));
