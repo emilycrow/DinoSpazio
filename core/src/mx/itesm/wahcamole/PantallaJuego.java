@@ -75,7 +75,7 @@ public class PantallaJuego implements Screen
 
     private void cargarTexturasSprites() {
         // Fondo
-        texturaFondo = new Texture(Gdx.files.internal("nivel.jpg"));
+        texturaFondo = new Texture(Gdx.files.internal("fondoNivel1.3.jpg"));
         spriteFondo = new Sprite(texturaFondo);
 
         //Boton de regreso
@@ -103,11 +103,6 @@ public class PantallaJuego implements Screen
 
         spriteFondo.draw(batch);
 
-        // Nivel
-        texto.mostrarMensaje("NIVEL 1 ", Principal.ANCHO_MUNDO/2,
-                Principal.ALTO_MUNDO*0.95f, batch);
-        spriteBtnHome.draw(batch);
-        batch.end();
     }
 
     @Override
