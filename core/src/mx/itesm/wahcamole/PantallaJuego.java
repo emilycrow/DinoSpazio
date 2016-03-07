@@ -111,6 +111,7 @@ public class PantallaJuego implements Screen
 
         spriteFondo.draw(batch);
 
+        batch.end();
     }
 
     @Override
