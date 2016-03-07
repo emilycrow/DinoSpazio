@@ -5,7 +5,7 @@ import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import mx.itesm.wahcamole.Principal;
+import mx.itesm.DinoSpazio.Principal;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override

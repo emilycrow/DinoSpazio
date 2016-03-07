@@ -1,4 +1,4 @@
-package mx.itesm.wahcamole;
+package mx.itesm.DinoSpazio;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -116,7 +116,7 @@ public class PantallaMenu implements Screen {
                     && touchY >= spriteBtnPlay.getY()
                     && touchY <= spriteBtnPlay.getY() + spriteBtnPlay.getHeight()) {
                 // Lanzar la pantalla de juego
-                principal.setScreen(new PantallaJuego(principal));
+                principal.setScreen(new mx.itesm.DinoSpazio.PantallaJuego(principal));
             } else if (touchX >= spriteBtnAcerca.getX() &&
                     touchX <= spriteBtnAcerca.getX() + spriteBtnAcerca.getWidth()
                     && touchY >= spriteBtnAcerca.getY()

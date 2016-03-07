@@ -1,4 +1,4 @@
-package mx.itesm.wahcamole;
+package mx.itesm.DinoSpazio;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
