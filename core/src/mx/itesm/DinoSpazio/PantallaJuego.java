@@ -27,8 +27,8 @@ public class PantallaJuego implements Screen
     private Sprite spriteFondo;
 
     // GIF RATITA
-    private Texture texturaRatita;
-    private Sprite spriteRatita;
+   /* private Texture texturaRatita;
+    private Sprite spriteRatita;*/
 
     // Dibujar
     private SpriteBatch batch;
@@ -39,10 +39,11 @@ public class PantallaJuego implements Screen
     private int marcador;
     private Texto texto;
 
+
     //Boton de regreso a menu
 
-    private Texture texturaBtnHome;
-    private Sprite spriteBtnHome;
+    private Texture texturaBtnRegreso;
+    private Sprite spriteBtnRegreso;
 
     //Sonidos
     private Sound efectoGolpe; //Efecto
@@ -77,19 +78,21 @@ public class PantallaJuego implements Screen
 
 
     private void cargarTexturasSprites() {
+
+        //Boton de regreso
+        texturaBtnRegreso = new Texture(Gdx.files.internal("RETURN.png"));
+        spriteBtnRegreso = new Sprite(texturaBtnRegreso);
+        spriteBtnRegreso.setPosition(Principal.ANCHO_MUNDO / 14 - spriteBtnRegreso.getWidth() / 2,
+                Principal.ALTO_MUNDO / 12 );
+
         // Fondo
         texturaFondo = new Texture(Gdx.files.internal("fondoNivel1.3.jpg"));
         spriteFondo = new Sprite(texturaFondo);
 
         // Fondo
-        texturaRatita = new Texture(Gdx.files.internal("ratita gif.gif"));
-        spriteRatita = new Sprite(texturaRatita);
+      /*  texturaRatita = new Texture(Gdx.files.internal("ratita gif.gif"));
+        spriteRatita = new Sprite(texturaRatita);*/
 
-        //Boton de regreso
-        texturaBtnHome = new Texture(Gdx.files.internal("RETURN.png"));
-        spriteBtnHome= new Sprite(texturaBtnHome);
-        spriteBtnHome.setPosition(Principal.ANCHO_MUNDO / 14 - spriteBtnHome.getWidth() / 2,
-                Principal.ALTO_MUNDO / 12 );
 
     }
 
@@ -132,7 +135,6 @@ public class PantallaJuego implements Screen
     public void hide() {
 
     }
-
     private void leerEntrada() {
         if (Gdx.input.justTouched()==true) {
             Vector3 coordenadas = new Vector3();
@@ -140,14 +142,12 @@ public class PantallaJuego implements Screen
             camara.unproject(coordenadas); // Transforma las coord
             float touchX = coordenadas.x;
             float touchY = coordenadas.y;
-
-            if (touchX >= spriteBtnHome.getX() &&
-                    touchX <= spriteBtnHome.getX() + spriteBtnHome.getWidth()
-                    && touchY >= spriteBtnHome.getY()
-                    && touchY <= spriteBtnHome.getY() + spriteBtnHome.getHeight()) {
+            if (touchX >= spriteBtnRegreso.getX() &&
+                    touchX <= spriteBtnRegreso.getX() + spriteBtnRegreso.getWidth()
+                    && touchY >= spriteBtnRegreso.getY()
+                    && touchY <= spriteBtnRegreso.getY() + spriteBtnRegreso.getHeight()) {
                 // Lanzar la pantalla de menu
-                principal.setScreen(new PantallaMenu(principal));
-                musicaFondo.stop();
+                principal.setScreen(new mx.itesm.DinoSpazio.PantallaMenu(principal));
 
             }
         }
@@ -159,7 +159,7 @@ public class PantallaJuego implements Screen
         // LIBERAR los recursos
         //para apple liberar memoria es indispensable!!!
         texturaFondo.dispose(); // regresamos la memoria
-        texturaBtnHome.dispose();
+        texturaBtnRegreso.dispose();
 
 
     }

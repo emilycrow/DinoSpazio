@@ -63,10 +63,10 @@ public class PantallaMenu implements Screen {
         texturaFondo = new Texture(Gdx.files.internal("menu2.0.jpg"));
         spriteFondo = new Sprite(texturaFondo);
         // Btn Play
-        texturaBtnPlay = new Texture(Gdx.files.internal("btnPlay.jpg"));
+        texturaBtnPlay = new Texture(Gdx.files.internal("PLAYBOTON2.1.png"));
         spriteBtnPlay = new Sprite(texturaBtnPlay);
         spriteBtnPlay.setPosition(Principal.ANCHO_MUNDO / 2 - spriteBtnPlay.getWidth() / 2,
-                Principal.ALTO_MUNDO / 2);
+                (Principal.ALTO_MUNDO / 2)-20);
         //Btn Acerca de
         texturaBtnAcerca = new Texture(Gdx.files.internal("btnAcerca.jpg" ));
         spriteBtnAcerca = new Sprite(texturaBtnAcerca);
@@ -74,7 +74,7 @@ public class PantallaMenu implements Screen {
                 Principal.ALTO_MUNDO / 3);
 
         // Btn Salir
-        texturaBtnSalir = new Texture(Gdx.files.internal("RETURN.png"));
+        texturaBtnSalir = new Texture(Gdx.files.internal("MENU2.png"));
         spriteBtnSalir = new Sprite(texturaBtnSalir);
         spriteBtnSalir.setPosition(Principal.ANCHO_MUNDO / 14 - spriteBtnSalir.getWidth() / 2,
                 Principal.ALTO_MUNDO / 12 );
