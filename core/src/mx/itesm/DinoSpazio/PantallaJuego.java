@@ -86,7 +86,7 @@ public class PantallaJuego implements Screen
         spriteRatita = new Sprite(texturaRatita);
 
         //Boton de regreso
-        texturaBtnHome = new Texture(Gdx.files.internal("btnHome.jpg"));
+        texturaBtnHome = new Texture(Gdx.files.internal("RETURN.png"));
         spriteBtnHome= new Sprite(texturaBtnHome);
         spriteBtnHome.setPosition(Principal.ANCHO_MUNDO / 14 - spriteBtnHome.getWidth() / 2,
                 Principal.ALTO_MUNDO / 12 );

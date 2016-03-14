@@ -59,7 +59,7 @@ public class PantallaAcerca implements Screen {
         spriteFondo = new Sprite(texturaFondo);
 
         //Boton de regreso
-        texturaBtnRegreso = new Texture(Gdx.files.internal("btnHome.jpg"));
+        texturaBtnRegreso = new Texture(Gdx.files.internal("RETURN.png"));
         spriteBtnRegreso = new Sprite(texturaBtnRegreso);
         spriteBtnRegreso.setPosition(Principal.ANCHO_MUNDO / 14 - spriteBtnRegreso.getWidth() / 2,
                 Principal.ALTO_MUNDO / 12 );

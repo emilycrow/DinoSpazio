@@ -74,7 +74,7 @@ public class PantallaMenu implements Screen {
                 Principal.ALTO_MUNDO / 3);
 
         // Btn Salir
-        texturaBtnSalir = new Texture(Gdx.files.internal("exitBtn.png"));
+        texturaBtnSalir = new Texture(Gdx.files.internal("RETURN.png"));
         spriteBtnSalir = new Sprite(texturaBtnSalir);
         spriteBtnSalir.setPosition(Principal.ANCHO_MUNDO / 14 - spriteBtnSalir.getWidth() / 2,
                 Principal.ALTO_MUNDO / 12 );
